@@ -1,0 +1,14 @@
+#circle {
+  animation: circle 1s ease infinite linear;
+  background: #000;
+}
+#setting {
+}
+@keyframes circle {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
