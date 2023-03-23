@@ -1,18 +1,42 @@
 import React from "react";
 import Profile from "../../Images/profile.png";
+import { DiReact } from "react-icons/di";
+import { GrNode } from "react-icons/gr";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiMongodb } from "react-icons/si";
 const AboutSection = () => {
   return (
-    <div className="md:w-8/12 md:mx-auto py-10 ">
-      <h1 className=" text-2xl lg:text-5xl font-bold text-darkBlack font-montserrat text-center">
+    <div className="md:w-7/12 md:mx-auto py-10 ">
+      <h1 className=" text-2xl lg:text-5xl font-bold text-darkBlack font-montserrat text-center mb-10">
         ABOUT ME
       </h1>
-      <div className="flex flex-col lg:flex-row gap-6 items-center my-10">
-        <div className="">
-          <img
-            src={Profile}
-            alt=""
-            className="bg-primary w-60 ml-auto mr-auto lg:w-[720px]"
-          />
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center gap-2 md:gap-2 lg:gap-6">
+        <div>
+          <div className="w-[450px] h-[450px] border rounded-full flex justify-center items-center border-[#DEE9FF] relative">
+            {/* Icons */}
+            <div className="left-[-20px] w-12 h-12 p-2 bg-gradient-to-r from-yellow-500 to-yellow-300  absolute z-50 rounded-full   text-white text-4xl flex justify-center items-center shadow-lg shadow-indigo-500/50 ">
+              <IoLogoJavascript />
+            </div>
+            <div className="right-[-20px] w-12 h-12 p-2 bg-gradient-to-r from-cyan-500 to-blue-500 absolute z-50 rounded-full  text-white text-4xl flex justify-center items-center shadow-lg shadow-cyan-500/50 ">
+              <DiReact />
+            </div>
+            <div className="top-[-20px] w-12 h-12 p-2 bg-gradient-to-r from-cyan-500 to-green-500 absolute z-50 rounded-full  text-white text-4xl flex justify-center items-center shadow-lg shadow-cyan-500/50 ">
+              <GrNode />
+            </div>
+            <div className="bottom-[-20px] w-12 h-12 p-2 bg-gradient-to-r from-cyan-500 to-blue-500 absolute z-50 rounded-full  text-white text-4xl flex justify-center items-center shadow-lg shadow-cyan-500/50 ">
+              <SiMongodb />
+            </div>
+            {/* -------- */}
+            <div className=" w-[370px] h-[370px] border rounded-full flex justify-center items-center border-[#DEE9FF] relative">
+              <div className="relative bg-[#233860] w-[220px] lg:w-[300px] h-[220px] lg:h-[300px] rounded-full overflow-hidden border-[6px] border-[#DEE9FF] shadow-lg ">
+                <img
+                  src={Profile}
+                  alt=""
+                  className="w-10/12 absolute left-0 bottom-0"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div className="px-4 lg:px-0 mt-10 lg:mt-0">
           <h2 className="text-darkBlack font-bold font-Josefin text-xl">
@@ -22,7 +46,7 @@ const AboutSection = () => {
             {" "}
             - It's my pleasure to introduce about myself.
           </h2>
-          <p>
+          <p className="text-justify">
             Hello i'm{" "}
             <span className="text-red text-poppins">Minhajur Rohoman</span> from
             Bangladesh. i'm Full stack web developer . I have deep understanding
@@ -32,7 +56,7 @@ const AboutSection = () => {
           <h2 className="text-darkBlack font-bold font-Josefin text-xl my-3">
             What are my values?
           </h2>
-          <p>
+          <p className="text-justify	">
             When developing a web project, I focus on understanding the business
             goals and delivering a final product that will really work for the
             client.
