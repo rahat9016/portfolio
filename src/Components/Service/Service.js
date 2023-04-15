@@ -1,7 +1,6 @@
 import React from "react";
 import ServiceCard from "./../ServiceCard/ServiceCard";
 import { services } from "./../../Data/Data";
-
 const Service = () => {
   return (
     <div className="py-10 md:w-8/12 md:mx-auto px-10 md:px-6 lg:px-0">

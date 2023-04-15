@@ -6,29 +6,27 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiMongodb } from "react-icons/si";
 const AboutSection = () => {
   return (
-    <div className="md:w-7/12 md:mx-auto py-10 ">
+    <div className="w-full lg:w-8/12 md:mx-auto py-10 ">
       <h1 className=" text-2xl lg:text-5xl font-bold text-darkBlack font-montserrat text-center mb-10">
         ABOUT ME
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center gap-2 md:gap-2 lg:gap-6">
-        <div>
-          <div className="w-[450px] h-[450px] border rounded-full flex justify-center items-center border-[#DEE9FF] relative">
-            {/* Icons */}
-            <div className="left-[-20px] w-12 h-12 p-2 bg-gradient-to-r from-yellow-500 to-yellow-300  absolute z-50 rounded-full   text-white text-4xl flex justify-center items-center shadow-lg shadow-indigo-500/50 ">
-              <IoLogoJavascript />
-            </div>
-            <div className="right-[-20px] w-12 h-12 p-2 bg-gradient-to-r from-cyan-500 to-blue-500 absolute z-50 rounded-full  text-white text-4xl flex justify-center items-center shadow-lg shadow-cyan-500/50 ">
-              <DiReact />
-            </div>
-            <div className="top-[-20px] w-12 h-12 p-2 bg-gradient-to-r from-cyan-500 to-green-500 absolute z-50 rounded-full  text-white text-4xl flex justify-center items-center shadow-lg shadow-cyan-500/50 ">
-              <GrNode />
-            </div>
-            <div className="bottom-[-20px] w-12 h-12 p-2 bg-gradient-to-r from-cyan-500 to-blue-500 absolute z-50 rounded-full  text-white text-4xl flex justify-center items-center shadow-lg shadow-cyan-500/50 ">
-              <SiMongodb />
-            </div>
-            {/* -------- */}
-            <div className=" w-[370px] h-[370px] border rounded-full flex justify-center items-center border-[#DEE9FF] relative">
-              <div className="relative bg-[#233860] w-[220px] lg:w-[300px] h-[220px] lg:h-[300px] rounded-full overflow-hidden border-[6px] border-[#DEE9FF] shadow-lg ">
+      <div className="grid grid-cols-1 xl:grid-cols-2 items-center gap-4">
+        <div className="mx-auto p-2">
+          <div className="w-[285px] lg:w-[420px] h-[285px] lg:h-[420px]  rounded-full border-2 shadow-sm border-[#DEE9FF] flex items-center justify-center relative">
+            <span className="absolute left-[-20px] w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center ">
+              <DiReact className=" text-3xl text-[#00D8FF] animate-spin"/>
+            </span>
+            <span className="absolute top-[-20px] w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center ">
+              <GrNode className=" text-3xl text-[#3F9136] animate-bounce"/>
+            </span>
+            <span className="absolute bottom-[-20px] w-10 h-10 rounded-full bg-[#FEDD25] shadow-md flex items-center justify-center ">
+              <IoLogoJavascript className=" text-3xl text-white animate-bounce"/>
+            </span>
+            <span className="absolute right-[-20px] w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center ">
+              <SiMongodb className=" text-3xl text-[#46A037] animate-bounce"/>
+            </span>
+            <div className="w-[220px] h-[220px] lg:w-[340px] lg:h-[340px] rounded-full border-2  border-[#DEE9FF] flex items-center justify-center">
+              <div className="relative bg-[#233860] w-[220px] lg:w-[280px] h-[220px] lg:h-[280px] rounded-full overflow-hidden border-[6px] border-[#DEE9FF] shadow-lg ">
                 <img
                   src={Profile}
                   alt=""

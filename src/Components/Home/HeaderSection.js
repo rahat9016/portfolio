@@ -14,7 +14,7 @@ const HeaderSection = () => {
         className="h-[640px] lg:h-[540px] px-10 lg:px-0 py-10 relative bg-no-repeat bg-left bg-contain"
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center md:w-8/12 md:mx-auto py-0 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center md:w-8/12 md:mx-auto py-0 md:py-20">
           <div>
             <h1 className="text-3xl text-darkBlack font-bold lg:text-5xl lg:font-extrabold font-montserrat mb-6 ">
               Minhajur Rohoman
@@ -31,7 +31,7 @@ const HeaderSection = () => {
               Get in Touch
             </a>
           </div>
-          <img src={bg1} alt="" className="h-96 " />
+          <img src={bg1} alt="" className="h-64 lg:h-96 mx-auto mt-2" />
         </div>
         <div className="absolute right-[-105px] lg:right-0 rotate-90 flex flex-row gap-2 items-center	top-[50%]">
           <p>Social Links</p>
