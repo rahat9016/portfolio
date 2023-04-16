@@ -7,7 +7,7 @@ const Skills = () => {
       <h1 className="text-center text-3xl font-bold font-nunito my-10">
         I have experience with these technologies
       </h1>
-      <div className="md:w-7/12 md:mx-auto grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2 lg:gap-6 items-center ">
+      <div className="md:w-7/12 md:mx-auto grid grid-cols-4 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2 lg:gap-6 items-center ">
         {experiences.map((experience, index) => (
           <div key={index} className="m-2">
             <img

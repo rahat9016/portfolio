@@ -1,9 +1,10 @@
 import React from "react";
 import Footer from "../../Components/Footer/Footer";
-import AboutSection from "../../Components/Home/AboutSection";
-import HeaderSection from "../../Components/Home/HeaderSection";
 import Skills from "./../../Components/Skills/Skills";
 import Service from "./../../Components/Service/Service";
+import FeaturedProjects from "../../Components/FeaturedProjects/FeaturedProjects";
+import AboutSection from "../../Components/HeaderAND_About/AboutSection";
+import HeaderSection from "../../Components/HeaderAND_About/HeaderSection";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <AboutSection />
       <Skills />
       <Service />
+      <FeaturedProjects />
       <Footer />
     </section>
   );
